@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background-image: url('images/bg.jpg'); /* Replace 'your-background-image.jpg' with your actual image file */
+    background-size: cover; /* This property ensures that the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+
+#navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#navbar h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 30pt;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Initial state for the box-shadow */
+    transition: box-shadow 0.3s; /* Transition effect for the box-shadow property */
+}
+
+nav a:hover {
+    background-color: #3b3939;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjust the values for your desired shadow effect */
+}
+
+#main-content {
+    margin-top: 80px; /* Adjust this value based on your navbar height */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 50px;
+}
+
+#portrait-container img {
+    max-width: 200pt;
+    height: auto;
+    border-radius: 15px;
+
+}
+
+p {
+    font-size: 16pt;
+}
+
+@media (max-width:800px) {
+    p {
+        font-size: 12pt;
+    }
+}
+
+
+.image-wrap {
+    float: left; /* or float: right; to position the image to the right */
+    shape-outside: url('images/PaulCzarJR.jpg');
+    padding: 0px 15px 15px 15px;
+    shape-margin: 10px; /* Adjust this value to control the margin between text and the image */
+}
+
+@media (max-width: 800px) {
+    .image-wrap {
+        float: none; /* Remove the float on smaller screens */
+        shape-outside: none; /* Remove the shape-outside on smaller screens */
+        padding: 0; /* Remove the padding on smaller screens */
+        shape-margin: 0; /* Remove the shape-margin on smaller screens */
+        text-align: center; /* Center the image on smaller screens */
+    }
+}
+
+.line-divider {
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    border-top: 1px solid #333; /* Change the color as needed */
+    margin: 20px auto; /* Adjust the margin as needed */
+}
+
+.work-item {
+    margin-bottom: 30px;
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.work-item a {
+    display: block;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Initial state for the box-shadow */
+    transition: box-shadow 0.3s; /* Transition effect for the box-shadow property */
+}
+
+.work-item a:hover {
+    background-color: #3b3939;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjust the values for your desired shadow effect */
+}
+
+.footer-link {
+    /* Add your desired styles for footer links here */
+    color: #fff; /* Example text color */
+    background-color: #333; /* Example background color */
+    padding: 10px; /* Example padding */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Initial state for the box-shadow */
+    transition: box-shadow 0.3s; /* Transition effect for the box-shadow property */
+}
+
+.footer-link:hover {
+    background-color: #3b3939; /* Example background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+#contact {
+    padding: 50px;
+    background-color: none; /* Background color for the contact section */
+}
+
+#contact h1 {
+    text-align: left;
+    color: #333;
+}
+
+.padding {
+    padding-left: 6%;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Adjust the margin based on your grid's gutter */
+}
+
+.name-email,
+.subject {
+    width: 50%;
+    padding: 10px; /* Adjust the padding based on your grid's gutter */
+}
+
+.message {
+    width: 100%;
+    padding: 10px; /* Adjust the padding as needed */
+    margin-left: 0px;
+}
+
+input,
+textarea {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #3b3939;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
